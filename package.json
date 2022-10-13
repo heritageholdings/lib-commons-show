@@ -13,7 +13,8 @@
     ],
     "scripts": {
         "test": "jest",
-        "build": "tsc"
+        "build": "tsc",
+        "release": "npm run build && npm publish --access public"
     },
     "devDependencies": {
         "@types/jest": "^29.1.2",
