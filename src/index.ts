@@ -1,1 +1,1 @@
-export const testing = "testing";
+export * as show from "./show";
