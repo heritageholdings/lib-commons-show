@@ -109,6 +109,8 @@ export const usdDecimalDash = F.pipe(usdDecimal, dashIfNonPositive);
 
 export const usdThousandsNoDecimal = F.pipe(usdNoDecimal, thousands);
 
+export const usdThousandsNoDecimalK = F.pipe(usdNoDecimal, withK, thousands);
+
 export const usdThousandsNoDecimalDash = F.pipe(
   usdThousandsNoDecimal,
   dashIfNonPositive
