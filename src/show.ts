@@ -138,3 +138,8 @@ export const allocationPercentage = F.pipe(
   dashIfNonPositive,
   percentToFloat
 );
+
+export const dpi = F.pipe(
+  multiple2,
+  getFilterOrElse<number>(S_N.isPositive, dash)
+);
