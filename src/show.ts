@@ -126,3 +126,13 @@ export const multiple2 = F.pipe(
   getFromNumeralFormat("(0.00)"),
   withSuffix("x")
 );
+
+export const totalIrr = F.pipe(percentPLSingleDecimal, percentToFloat);
+
+export const plThousands = F.pipe(usdPLNoDecimal, dashIfZero, thousands);
+
+export const allocationPercentage = F.pipe(
+  percentSingleDecimal,
+  dashIfNonPositive,
+  percentToFloat
+);
